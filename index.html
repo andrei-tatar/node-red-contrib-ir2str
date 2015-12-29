@@ -1,0 +1,25 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ir_decenc',{
+        category: 'function',
+        color: '#debd5c',
+        defaults: {
+            name: {value: ''},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "ir_decenc.png",
+        paletteLabel: 'ir dec/enc',
+        label: function() { return this.name || 'ir dec/enc'; }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ir_decenc">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="ir_decenc">
+    <p>Decodes/Encodes ir pulses to or from strings</p>
+</script>
